@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import './App.css';
 
-
+const Pomodoro = () => {
+    return (
 
 export default function App() {
-  const [secondsLeft, setSecondsLeft] = useState(1 * 60);
+  const [secondsLeft, setSecondsLeft] = useState(25 * 60);
   const [timer, setTimer] = useState();
 
   const start = () => {
@@ -35,3 +35,7 @@ export default function App() {
     </div>
   );
 }
+    )
+}
+
+export default Pomodoro
